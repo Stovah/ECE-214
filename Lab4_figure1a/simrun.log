@@ -1,0 +1,89 @@
+
+Circuit: ***** spice netlist for cell 'lab4_figure1a' *****
+
+binary raw file
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 29  
+
+No. of Data Rows : 1
+No. of Data Columns : 30  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+n2                                          10
+n1                                         -10
+vin                                          0
+n0                                1.09704e-005
+vout                              6.44136e-005
+xi0.11                                -9.65456
+xi0.12                                -9.65455
+xi0.6                            -9.15585e-009
+xi0.7                             6.45842e-005
+xi0.53                                     7.8
+xi0.54                                    -7.8
+xi0.90                            1.13709e-006
+xi0.91                                      25
+xi0.92                                     -25
+xi0.99                                       0
+xi0.10                               -0.398582
+xi0.9                                        0
+xi0.8                             6.45842e-005
+h.xi0.hlim#branch                -2.08361e-031
+v.xi0.vlim#branch                 1.13709e-009
+v0#branch                         1.09704e-009
+v.xi0.vln#branch                       -8e-016
+v.xi0.vlp#branch                       -8e-016
+v.xi0.ve#branch                         8e-016
+v.xi0.vc#branch                         8e-016
+v.xi0.vb#branch                  -9.15585e-014
+v2#branch                           -0.0095281
+v1#branch                          -0.00952771
+a$poly$e.xi0.egnd#branch_1_0     -3.89619e-007
+
+
+No. of Data Rows : 150000
+
+Total elapsed time: 6.116 seconds.
+
+Total DRAM available = 16267.054688 MB.
+DRAM currently available = 12040.820313 MB.
+Total ngspice program size = 30.871094 MB.
+
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      n2 = 1.000e+001
+                      n1 = -1.000e+001
+                      vin = 0.000e+000
+                      n0 = 1.097e-005
+                      vout = 6.441e-005
+                      xi0_11 = -9.655e+000
+                      xi0_12 = -9.655e+000
+                      xi0_6 = -9.156e-009
+                      xi0_7 = 6.458e-005
+                      xi0_53 = 7.800e+000
+                      xi0_54 = -7.800e+000
+                      xi0_90 = 1.137e-006
+                      xi0_91 = 2.500e+001
+                      xi0_92 = -2.500e+001
+                      xi0_99 = 0.000e+000
+                      xi0_10 = -3.986e-001
+                      xi0_9 = 0.000e+000
+                      xi0_8 = 6.458e-005
+                      i_h_xi0_hlim = -2.084e-031
+                      i_v_xi0_vlim = 1.137e-009
+                      i_v0 = 1.097e-009
+                      i_v_xi0_vln = -8.000e-016
+                      i_v_xi0_vlp = -8.000e-016
+                      i_v_xi0_ve = 8.000e-016
+                      i_v_xi0_vc = 8.000e-016
+                      i_v_xi0_vb = -9.156e-014
+                      i_v2 = -9.528e-003
+                      i_v1 = -9.528e-003
+                      i_a$poly$e_xi0_egnd = -3.896e-007
+
+***************** End of Operating Point Values ******************

@@ -1,0 +1,90 @@
+
+Circuit: ***** spice netlist for cell 'lab4_postlab' *****
+
+binary raw file
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: v2: no DC value, transient time 0 value used
+No. of Data Columns : 29  
+
+No. of Data Rows : 1
+No. of Data Columns : 30  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+xi0.11                                -9.30656
+xi0.12                                     -10
+xi0.6                                 -19.6116
+xi0.7                                  8.50593
+vout                                   8.47677
+xi0.53                                     7.8
+xi0.54                                    -7.8
+xi0.90                                0.194393
+xi0.91                                      25
+xi0.92                                     -25
+n1                                         -10
+n0                                          10
+xi0.99                                       0
+xi0.10                                -1.13844
+n2                                   -0.990533
+xi0.9                                        0
+xi0.8                                  8.50593
+vin                                         -1
+h.xi0.hlim#branch                -5.55682e-026
+v.xi0.vlim#branch                  0.000194393
+v2#branch                         9.46727e-006
+v1#branch                          -0.00952882
+v0#branch                          -0.00934279
+v.xi0.vln#branch                       -8e-016
+v.xi0.vlp#branch                       -8e-016
+v.xi0.ve#branch                         8e-016
+v.xi0.vc#branch                   -0.000184926
+v.xi0.vb#branch                   -0.000196116
+a$poly$e.xi0.egnd#branch_1_0      -0.000195503
+
+
+No. of Data Rows : 16332
+
+Total elapsed time: 0.557 seconds.
+
+Total DRAM available = 16267.054688 MB.
+DRAM currently available = 12004.101563 MB.
+Total ngspice program size = 15.933594 MB.
+
+***** Operating Point Values (Generated from .op Statement) *****
+
+                      xi0_11 = -9.307e+000
+                      xi0_12 = -1.000e+001
+                      xi0_6 = -1.961e+001
+                      xi0_7 = 8.506e+000
+                      vout = 8.477e+000
+                      xi0_53 = 7.800e+000
+                      xi0_54 = -7.800e+000
+                      xi0_90 = 1.944e-001
+                      xi0_91 = 2.500e+001
+                      xi0_92 = -2.500e+001
+                      n1 = -1.000e+001
+                      n0 = 1.000e+001
+                      xi0_99 = 0.000e+000
+                      xi0_10 = -1.138e+000
+                      n2 = -9.905e-001
+                      xi0_9 = 0.000e+000
+                      xi0_8 = 8.506e+000
+                      vin = -1.000e+000
+                      i_h_xi0_hlim = -5.557e-026
+                      i_v_xi0_vlim = 1.944e-004
+                      i_v2 = 9.467e-006
+                      i_v1 = -9.529e-003
+                      i_v0 = -9.343e-003
+                      i_v_xi0_vln = -8.000e-016
+                      i_v_xi0_vlp = -8.000e-016
+                      i_v_xi0_ve = 8.000e-016
+                      i_v_xi0_vc = -1.849e-004
+                      i_v_xi0_vb = -1.961e-004
+                      i_a$poly$e_xi0_egnd = -1.955e-004
+
+***************** End of Operating Point Values ******************

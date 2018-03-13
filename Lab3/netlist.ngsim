@@ -1,0 +1,13 @@
+***** Spice Netlist for Cell 'Lab3' *****
+
+************** Module Lab3 **************
+r0 vin n0 50 noisy=0 
+r1 n0 n1 res1 noisy=0 
+r2 n1 vout res2 noisy=0 
+c0 gnd n1 cap1 ic=0 
+c1 gnd vout cap2 ic=0 
+v0 vin gnd ac 1v pulse -2v 2v 0ns 0.1us 0.1us 0.625ms 1.25ms 
+
+
+.end
+

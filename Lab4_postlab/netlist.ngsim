@@ -1,0 +1,14 @@
+***** Spice Netlist for Cell 'Lab4_postlab' *****
+
+************** Module Lab4_postlab **************
+xi0 gnd n2 n0 n1 vout tl082 
+v0 n0 gnd dc='10' ac='0' 
+v1 gnd n1 dc='10' ac='0' 
+r0 vin n2 1k noisy=0 
+c0 n2 vout 0.1uf ic=0 
+r1 n2 vout 1meg noisy=0 
+v2 vin gnd ac 1v pulse -1v 1v 0ns 1ms 0.1ns 0.1ns 1ms 
+
+
+.end
+
