@@ -1,0 +1,13 @@
+***** Spice Netlist for Cell 'Lab6' *****
+
+************** Module Lab6 **************
+r0 vg va 50 noisy=0 
+r1 va n1 res1 noisy=0 
+r2 n0 vc res2 noisy=0 
+c0 gnd n0 cap ic=0 
+l0 n1 vc ind 
+v0 vg gnd ac 1v pulse 0v 1v 10us 0.1us 0.1us 0.625ms 1.25ms 
+
+
+.end
+
