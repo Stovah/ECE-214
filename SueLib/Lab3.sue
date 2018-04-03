@@ -1,0 +1,26 @@
+proc SCHEMATIC_Lab3 {} {
+make global -name gnd -origin {570 690}
+make name_net -name Vin -origin {320 540}
+make name_net -name Vout -origin {720 540}
+make R -orient R90 -name R0 -resistance 50 -origin {400 540}
+make R -orient R90 -name R1 -resistance res1 -origin {500 540}
+make R -orient R90 -name R2 -resistance res2 -origin {640 540}
+make C -name C0 -capacitance cap1 -origin {570 610}
+make C -name C1 -capacitance cap2 -origin {720 610}
+make V_pulse -name V0 -initial_voltage -2V -final_voltage 2V -rise_time 0.1us -fall_time 0.1us -pulse_width 0.625ms -period 1.25ms -ac_voltage 1V -origin {320 610}
+  make_wire 440 540 460 540
+  make_wire 570 540 540 540
+  make_wire 570 540 600 540
+  make_wire 720 650 720 680
+  make_wire 320 680 320 650
+  make_wire 680 540 720 540
+  make_wire 320 540 360 540
+  make_wire 570 650 570 680
+  make_wire 570 680 570 690
+  make_wire 570 540 570 570
+  make_wire 720 540 720 570
+  make_wire 320 680 570 680
+  make_wire 570 680 720 680
+  make_wire 320 540 320 570
+}
+

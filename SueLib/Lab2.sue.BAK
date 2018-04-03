@@ -1,0 +1,22 @@
+proc SCHEMATIC_Lab2 {} {
+make R -orient R90 -name R0 -resistance 50 -origin {280 320}
+make R -orient R90 -name R1 -resistance 160k -origin {440 320}
+make C -name C0 -capacitance 1.5nF -origin {560 440}
+make global -name gnd -origin {530 540}
+make name_net -name vin -origin {160 320}
+make name_net -name va -origin {360 320}
+make name_net -name vb -origin {560 320}
+make V_sin -name Vin -peak_voltage 4V -frequency freq -origin {160 440}
+  make_wire 160 320 240 320
+  make_wire 480 320 560 320
+  make_wire 560 320 560 400
+  make_wire 160 480 160 530
+  make_wire 560 530 560 480
+  make_wire 530 530 160 530
+  make_wire 530 530 560 530
+  make_wire 530 530 530 540
+  make_wire 160 320 160 400
+  make_wire 360 320 320 320
+  make_wire 360 320 400 320
+}
+

@@ -1,0 +1,29 @@
+proc SCHEMATIC_Lab6 {} {
+make global -name gnd -origin {570 1240}
+make R -orient R90 -name R0 -resistance 50 -origin {480 1070}
+make name_net -name va -origin {550 1060}
+make name_net -name vc -origin {800 1060}
+make R -orient R90 -name R1 -resistance res1 -origin {600 1070}
+make R -name R2 -resistance res2 -origin {800 1150}
+make C -orient R90 -name C0 -capacitance cap -origin {720 1230}
+make L -orient R90 -name L0 -inductance ind -origin {720 1070}
+make name_net -name vg -origin {400 1060}
+make V_pulse -name V0 -delay_time 10us -rise_time 0.1us -fall_time 0.1us -pulse_width 0.625ms -period 1.25ms -ac_voltage 1V -origin {400 1160}
+  make_wire 400 1200 400 1230
+  make_wire 760 1230 800 1230
+  make_wire 800 1070 760 1070
+  make_wire 800 1060 800 1070
+  make_wire 550 1060 550 1070
+  make_wire 520 1070 550 1070
+  make_wire 550 1070 560 1070
+  make_wire 640 1070 680 1070
+  make_wire 800 1070 800 1110
+  make_wire 400 1070 440 1070
+  make_wire 400 1230 570 1230
+  make_wire 570 1230 680 1230
+  make_wire 800 1190 800 1230
+  make_wire 570 1230 570 1240
+  make_wire 400 1060 400 1070
+  make_wire 400 1070 400 1120
+}
+

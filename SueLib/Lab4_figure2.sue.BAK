@@ -1,0 +1,34 @@
+proc SCHEMATIC_Lab4_figure2 {} {
+make global -name gnd -origin {240 780}
+make global -orient RXY -name gnd -origin {240 450}
+make global -name gnd -origin {480 730}
+make global -orient RXY -name gnd -origin {480 530}
+make name_net -orient R90 -name vout -origin {560 670}
+make global -name gnd -origin {560 1020}
+make R -name R0 -resistance 10k -origin {240 720}
+make R -name R1 -resistance 10k -origin {240 580}
+make V_dc -orient RXY -name V1 -dc_voltage 10 -ac_voltage 0 -origin {480 580}
+make R -orient RXY -name R2 -resistance 10k -origin {560 760}
+make V_dc -name V0 -origin {560 970}
+make V_dc -orient RXY -name V2 -dc_voltage 10 -ac_voltage 0 -origin {240 500}
+make name_net -orient R90 -name vin -origin {560 930}
+make R -orient RXY -name R3 -resistance 6k -origin {560 880}
+make IdealOpAmp -name xi0 -origin {420 630}
+  make_wire 370 650 240 650
+  make_wire 240 620 240 650
+  make_wire 240 680 240 650
+  make_wire 240 760 240 780
+  make_wire 240 450 240 460
+  make_wire 480 710 480 730
+  make_wire 480 620 480 630
+  make_wire 480 530 480 540
+  make_wire 370 690 370 820
+  make_wire 370 820 560 820
+  make_wire 560 820 560 800
+  make_wire 560 840 560 820
+  make_wire 560 670 550 670
+  make_wire 560 670 560 720
+  make_wire 560 1010 560 1020
+  make_wire 560 920 560 930
+}
+

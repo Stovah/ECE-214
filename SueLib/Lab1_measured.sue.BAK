@@ -1,0 +1,40 @@
+proc SCHEMATIC_Lab1_measured {} {
+make R -orient R90 -name Rfg -resistance 30 -origin {160 360}
+make C -name Cp1 -capacitance 99.3pF -origin {240 440}
+make R -orient R90 -name Ra -resistance 9.87k -origin {310 360}
+make R -name Rb -resistance 9.88k -origin {380 440}
+make C -name Cp2 -capacitance 102.2pF -origin {480 440}
+make R -name Ros -resistance 1meg -origin {600 440}
+make C -name Cos -capacitance 13pF -origin {700 440}
+make global -name gnd -origin {380 530}
+make name_net -name node1 -origin {240 360}
+make name_net -name vout -origin {480 360}
+make name_net -name vin -origin {80 360}
+make V_sin -name Vs -origin {80 440}
+  make_wire 80 480 80 520
+  make_wire 700 520 700 480
+  make_wire 600 480 600 520
+  make_wire 480 520 380 520
+  make_wire 380 360 350 360
+  make_wire 700 360 700 400
+  make_wire 600 400 600 360
+  make_wire 480 360 380 360
+  make_wire 200 360 240 360
+  make_wire 270 360 240 360
+  make_wire 380 360 380 400
+  make_wire 240 480 240 520
+  make_wire 380 480 380 520
+  make_wire 380 520 380 530
+  make_wire 240 360 240 400
+  make_wire 80 360 120 360
+  make_wire 80 520 240 520
+  make_wire 240 520 380 520
+  make_wire 80 360 80 400
+  make_wire 600 520 480 520
+  make_wire 600 520 700 520
+  make_wire 600 360 480 360
+  make_wire 600 360 700 360
+  make_wire 480 480 480 520
+  make_wire 480 360 480 400
+}
+

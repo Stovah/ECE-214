@@ -1,0 +1,50 @@
+proc SCHEMATIC_Lab2_Complete {} {
+make V_sin -name V0 -peak_voltage 4V -frequency freq -origin {80 280}
+make R -orient R90 -name R0 -resistance 50 -origin {160 200}
+make C -name C0 -capacitance 100pF -origin {240 280}
+make C -name C1 -capacitance 100pF -origin {320 280}
+make R -name R1 -resistance 1meg -origin {400 280}
+make C -name C2 -capacitance 13pF -origin {480 280}
+make R -orient R90 -name R2 -resistance 160k -origin {560 200}
+make C -name C3 -capacitance 1.5nF -origin {640 280}
+make C -name C4 -capacitance 100pF -origin {720 280}
+make R -name R3 -resistance 1meg -origin {800 280}
+make C -name C5 -capacitance 13pF -origin {880 280}
+  make_wire 120 200 80 200
+  make_wire 80 200 80 240
+  make_wire 240 240 240 200
+  make_wire 240 200 200 200
+  make_wire 320 240 320 200
+  make_wire 320 200 240 200
+  make_wire 400 240 400 200
+  make_wire 400 200 320 200
+  make_wire 480 200 400 200
+  make_wire 480 200 520 200
+  make_wire 880 200 880 240
+  make_wire 800 240 800 200
+  make_wire 800 200 880 200
+  make_wire 720 240 720 200
+  make_wire 720 200 800 200
+  make_wire 640 240 640 200
+  make_wire 640 200 720 200
+  make_wire 640 200 600 200
+  make_wire 80 320 80 370
+  make_wire 880 370 880 320
+  make_wire 800 320 800 370
+  make_wire 800 370 880 370
+  make_wire 720 320 720 370
+  make_wire 720 370 800 370
+  make_wire 640 320 640 370
+  make_wire 640 370 720 370
+  make_wire 480 370 640 370
+  make_wire 400 320 400 370
+  make_wire 400 370 480 370
+  make_wire 320 320 320 370
+  make_wire 320 370 400 370
+  make_wire 240 320 240 370
+  make_wire 240 370 320 370
+  make_wire 240 370 80 370
+  make_wire 480 200 480 240
+  make_wire 480 320 480 370
+}
+

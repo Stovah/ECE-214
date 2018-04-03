@@ -1,0 +1,35 @@
+proc SCHEMATIC_Lab4_postlab {} {
+make global -orient RXY -name gnd -origin {630 940}
+make global -name gnd -origin {630 1220}
+make global -name gnd -origin {510 1130}
+make global -name gnd -origin {380 1060}
+make name_net -name vin -origin {380 880}
+make name_net -orient R90 -name vout -origin {700 990}
+make TL082 -name xi0 -origin {570 1040}
+make V_dc -orient RXY -name V0 -dc_voltage 10 -ac_voltage 0 -origin {630 990}
+make V_dc -orient RXY -name V1 -dc_voltage 10 -ac_voltage 0 -origin {630 1170}
+make R -orient R90 -name R0 -origin {440 880}
+make C -orient R90 -name C0 -capacitance 0.1uF -origin {600 880}
+make R -orient R90 -name R1 -resistance 1meg -origin {600 800}
+make V_sin -name V2 -origin {380 1000}
+  make_wire 510 1100 520 1100
+  make_wire 510 1100 510 1130
+  make_wire 630 1030 630 1040
+  make_wire 630 940 630 950
+  make_wire 630 1120 630 1130
+  make_wire 630 1210 630 1220
+  make_wire 520 880 480 880
+  make_wire 560 880 520 880
+  make_wire 380 880 400 880
+  make_wire 640 880 700 880
+  make_wire 700 880 700 990
+  make_wire 700 990 700 1080
+  make_wire 520 880 520 1060
+  make_wire 520 880 520 800
+  make_wire 520 800 560 800
+  make_wire 640 800 700 800
+  make_wire 700 800 700 880
+  make_wire 380 880 380 960
+  make_wire 380 1040 380 1060
+}
+
