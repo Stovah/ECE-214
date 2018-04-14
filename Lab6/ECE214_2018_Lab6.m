@@ -16,7 +16,7 @@ hspc_set_param('res2', R2, hspc_filename);
 hspc_set_param('cap', C, hspc_filename);
 hspc_set_param('ind', L, hspc_filename);
 
-hspc_addline('.tran 1u 0.2m 10u', hspc_filename);
+hspc_addline('.tran 0.1u 0.2m 10u', hspc_filename);
 ngsim(hspc_filename); % run NGspice
 
 %% load simulation results and extract time and Voltages
@@ -34,7 +34,7 @@ lw = 1.5; % define linewidth
 Fig1 = figure('Position', [200, 75, 850, 600]); % figure size and location
 
 subplot(2,1,1); % first subplot
-plot(time.*1000000,  Vc, time.*1000000, Va, time.*1000000, Vg, 'linewidth',lw);
+plot(time.*1000000,  (Vc), time.*1000000, (Va), time.*1000000, (Vg), 'linewidth',lw);
 grid on; % add grid
 set(gca, 'fontsize', fs); % set font size
 ylabel('Voltage (V)', 'fontsize', fs); % label y-axis
@@ -42,7 +42,7 @@ title('Step Response (time domain)'); % title
 legend('V_C', 'Vin', 'Vfg'); % add legend
 
 subplot(2,1,2); % second subplot
-plot(time.*1000000, Vi, 'linewidth',lw);
+plot(time.*1000000, (Vi), 'linewidth',lw);
 grid on; % add grid
 set(gca, 'fontsize', fs); % set font size
 xlabel('Time (\mus)', 'fontsize', fs); % label x-axis
@@ -65,7 +65,7 @@ legend('Vin - V_C'); % add legend
 Fig2 = figure('Position', [150, 75, 850, 600]); % figure size and location
 
  subplot(2,1,1)
- semilogx(frequency, (Vc), frequency, (Va), 'linewidth',lw);
+ semilogx(frequency, abs(Vc), frequency, abs(Va), 'linewidth',lw);
  grid on;
  set(gca, 'fontsize', fs);
  ylabel('Voltage (V)', 'fontsize', fs);
@@ -73,7 +73,7 @@ Fig2 = figure('Position', [150, 75, 850, 600]); % figure size and location
  legend('V_C', 'Vin'); % add legend
  
  subplot(2,1,2)
- semilogx(frequency, (Vi), 'linewidth',lw);
+ semilogx(frequency, abs(Vi), 'linewidth',lw);
  grid on;
  set(gca, 'fontsize', fs);
  xlabel('Frequency (Hz)', 'fontsize', fs);

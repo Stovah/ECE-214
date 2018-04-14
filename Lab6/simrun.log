@@ -12,11 +12,11 @@ No. of Data Columns : 7
 
 No. of Data Rows : 1
 
-Total elapsed time: 0.047 seconds.
+Total elapsed time: 0.062 seconds.
 
 Total DRAM available = 16267.054688 MB.
-DRAM currently available = 10563.898438 MB.
-Total ngspice program size = 15.828125 MB.
+DRAM currently available = 10313.925781 MB.
+Total ngspice program size = 14.414063 MB.
 
 ***** Operating Point Values (Generated from .op Statement) *****
 

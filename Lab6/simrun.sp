@@ -16,10 +16,10 @@ v0 vg gnd ac 1v pulse 0v 1v 10us 0.1us 0.1us 0.625ms 1.25ms
 .temp 27
 .ac dec 200 1000 1e6
 .global gnd
-.param res1=0
-.param res2=0
-.param cap=3.3e-07
-.param ind=0.001
+.param res1=1.59e-07
+.param res2=2.51
+.param cap=3.36e-07
+.param ind=0.001005
 .options post=1 delmax=5p relv=1e-6 reli=1e-6 relmos=1e-6 method=gear
 .op
 
