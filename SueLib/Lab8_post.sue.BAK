@@ -1,0 +1,58 @@
+proc SCHEMATIC_Lab8_post {} {
+make global -name gnd -origin {1330 2760}
+make 2N7000_mod -name X0 -origin {1570 2630}
+make 2N7000_mod -orient RX -name X1 -origin {1090 2630}
+make name_net -name vout -origin {1610 2550}
+make V_dc -name V0 -dc_voltage 12 -origin {960 2600}
+make name_net -name vc1 -origin {1290 2550}
+make global -orient R270 -name vc1 -origin {1290 2550}
+make name_net -name vc2 -origin {1370 2550}
+make global -orient R90 -name vc2 -origin {1370 2550}
+make global -orient R270 -name vc2 -origin {1160 2630}
+make global -orient R90 -name vc1 -origin {1500 2630}
+make R -name R0 -resistance 985 -origin {1090 2480}
+make R -name R1 -resistance 983 -origin {1570 2480}
+make R -name R2 -resistance 60.5k -origin {1250 2480}
+make R -name R3 -resistance 60.6k -origin {1410 2480}
+make R -name R4 -resistance 29.6k -origin {1250 2700}
+make R -name R5 -resistance 29.6k -origin {1410 2700}
+make C -orient R90 -name C1 -capacitance 437pF -origin {1490 2550}
+make C -orient R90 -name C0 -capacitance 1.4646nF -origin {1170 2550}
+  make_wire 1130 2550 1090 2550
+  make_wire 1530 2550 1570 2550
+  make_wire 1570 2760 1570 2670
+  make_wire 1410 2760 1410 2740
+  make_wire 1410 2760 1570 2760
+  make_wire 1250 2740 1250 2760
+  make_wire 1090 2670 1090 2760
+  make_wire 1090 2760 1250 2760
+  make_wire 1570 2410 1570 2440
+  make_wire 1410 2410 1570 2410
+  make_wire 1250 2410 1410 2410
+  make_wire 1090 2410 1250 2410
+  make_wire 1250 2410 1250 2440
+  make_wire 1330 2760 1250 2760
+  make_wire 1330 2760 1410 2760
+  make_wire 1250 2550 1210 2550
+  make_wire 1450 2550 1410 2550
+  make_wire 1290 2550 1250 2550
+  make_wire 1370 2550 1410 2550
+  make_wire 1510 2630 1500 2630
+  make_wire 1150 2630 1160 2630
+  make_wire 1090 2410 1090 2440
+  make_wire 1610 2550 1570 2550
+  make_wire 1250 2520 1250 2550
+  make_wire 1250 2550 1250 2660
+  make_wire 1090 2520 1090 2550
+  make_wire 1090 2550 1090 2590
+  make_wire 1570 2520 1570 2550
+  make_wire 1570 2550 1570 2590
+  make_wire 960 2560 960 2410
+  make_wire 960 2410 1090 2410
+  make_wire 960 2640 960 2760
+  make_wire 960 2760 1090 2760
+  make_wire 1410 2410 1410 2440
+  make_wire 1410 2520 1410 2550
+  make_wire 1410 2550 1410 2660
+}
+

@@ -1,0 +1,75 @@
+proc SCHEMATIC_Lab8 {} {
+make global -name gnd -origin {1210 2520}
+make output -name vout -origin {1490 2310}
+make input -name vin -origin {930 2170}
+make global -orient R270 -name vc1 -origin {1040 2390}
+make global -orient R90 -name vc2 -origin {1380 2390}
+make global -orient R90 -name vc1 -origin {1250 2310}
+make global -orient R270 -name vc2 -origin {1170 2310}
+make name_net -name vc2 -origin {1160 2310}
+make name_net -name vc1 -origin {1260 2310}
+make R -name R0 -origin {970 2240}
+make R -name R1 -origin {1450 2240}
+make 2N7000_mod -name X0 -origin {1450 2390}
+make 2N7000_mod -orient RX -name X1 -origin {970 2390}
+make R -name R2 -resistance 60k -origin {1130 2240}
+make R -name R3 -resistance 60k -origin {1290 2240}
+make R -name R4 -resistance 30k -origin {1130 2460}
+make R -name R5 -resistance 30k -origin {1290 2460}
+make C -orient R90 -name C1 -capacitance 980pF -origin {1050 2310}
+make C -orient R90 -name C0 -capacitance 650pF -origin {1370 2310}
+  make_wire 1010 2310 970 2310
+  make_wire 1410 2310 1450 2310
+  make_wire 1450 2520 1450 2430
+  make_wire 1290 2520 1290 2500
+  make_wire 1290 2520 1450 2520
+  make_wire 1130 2500 1130 2520
+  make_wire 970 2430 970 2520
+  make_wire 970 2520 1130 2520
+  make_wire 1450 2170 1450 2200
+  make_wire 1290 2200 1290 2170
+  make_wire 1290 2170 1450 2170
+  make_wire 1130 2170 1290 2170
+  make_wire 970 2170 1130 2170
+  make_wire 1130 2170 1130 2200
+  make_wire 1210 2520 1130 2520
+  make_wire 1210 2520 1290 2520
+  make_wire 1130 2310 1090 2310
+  make_wire 1330 2310 1290 2310
+  make_wire 1390 2390 1380 2390
+  make_wire 1030 2390 1040 2390
+  make_wire 930 2170 970 2170
+  make_wire 970 2170 970 2200
+  make_wire 1490 2310 1450 2310
+  make_wire 1450 2280 1450 2310
+  make_wire 1450 2310 1450 2350
+  make_wire 1290 2280 1290 2310
+  make_wire 1290 2310 1290 2420
+  make_wire 1130 2280 1130 2310
+  make_wire 1130 2310 1130 2420
+  make_wire 970 2280 970 2310
+  make_wire 970 2310 970 2350
+  make_wire 1130 2310 1160 2310
+  make_wire 1160 2310 1170 2310
+  make_wire 1250 2310 1260 2310
+  make_wire 1260 2310 1290 2310
+}
+
+proc ICON_Lab8 args {
+
+
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 10} -name vin
+icon_term -type output -origin {100 10} -name vout
+icon_property -origin {-90 10} -label vin
+icon_property -origin {90 10} -anchor e -label vout
+icon_property -origin {-90 -40} -label {$name}
+icon_property -origin {-90 -20} -label {Astable Multivibrator}
+  icon_line -100 -30 100 -30 100 30 -100 30 -100 -30
+icon_property -origin {-90 40} -label {example_param=$example_param}
+  icon_property -origin {-90 100} -type user -name name -default x
+  icon_property -origin {-90 120} -type user -name example_param -default 1.0
+
+
+}
+
